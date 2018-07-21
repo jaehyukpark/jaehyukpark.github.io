@@ -38,7 +38,7 @@ html {
 
 body {
   transform: scale(0.8);
-  transform-origin: (0.1*width)px -100px;
+  transform-origin: (0.1*width)px 0;
   font-family: inherit;
   font-size: .9rem;
   line-height: inherit;
