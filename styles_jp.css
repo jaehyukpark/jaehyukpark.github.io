@@ -15,7 +15,7 @@
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+  box-sizing: 0.8*border-box;
 }
 
 .row:after,
@@ -25,10 +25,10 @@
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-family: 'Palatino Linotype', sans-serif;
+  font-size: 11px;
   color: rgba(0,0,0,0.8);
-  line-height: 1.65;
+  line-height: 1.45;
 }
 @media screen and (min-width: 58em) {
   html {
@@ -37,8 +37,10 @@ html {
 }
 
 body {
+  transform: scale(0.8);
+  transform-origin: (0.1*width)px 0;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: .9rem;
   line-height: inherit;
   color: inherit;
   background-color: #fff;
@@ -79,7 +81,7 @@ ul, ol, dl {
 
 /* Navigation bar text */
 .navbar-default {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Palatino Linotype', sans-serif;
   font-weight: 400;
   line-height: 1.25;
   text-rendering: optimizeLegibility;
@@ -96,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word; /* Ensures very long heading words do not overflow into content. */
 }
 h1 {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
 }
 h2 {
   margin-top: 1rem;
@@ -115,14 +117,14 @@ h4, h5, h6 {
 
 a,
 h3.article-title a:hover {
-  color: #0095eb;
+  color: #3c4672;
   text-decoration: none;
   transition: color 0.6s ease;
 }
 
 a:hover,
 a:focus {
-  color: #0095eb;
+  color: #3c4672;
 }
 
 img,
@@ -480,10 +482,10 @@ a[data-fancybox] img {
 }
 
 #profile .portrait-title h3 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 300;
   color: rgba(0,0,0, 0.54);
-  margin: 0px 0 10px 0;
+  margin: 0px 0 10px 10px;
 }
 
 #profile ul.network-icon {
@@ -744,26 +746,31 @@ article .article-metadata {
 }
 
 .pub .pub-row-heading {
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .pub-list-item .pub-abstract {
-  font-size: 1rem;
+  font-size: .8rem;
+  padding-top: 2px;
 }
 
 .pub-list-item .pub-authors {
   line-height: normal;
   font-style: normal;
   font-size: 1rem;
+  padding-top: 10px;
   color: #3170A5;
 }
 
 .pub-list-item .pub-publication {
   color: #090;
   font-size: 1rem;
+  padding-top: 5px;
 }
 
 .pub-list-item .pub-links {
+  font-size: 1rem;
   padding-top: 10px;
 }
 
