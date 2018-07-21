@@ -28,7 +28,7 @@ html {
   font-family: 'Palatino Linotype', sans-serif;
   font-size: 12px;
   color: rgba(0,0,0,0.8);
-  line-height: 1.65;
+  line-height: 1.55;
 }
 @media screen and (min-width: 58em) {
   html {
@@ -744,11 +744,12 @@ article .article-metadata {
 }
 
 .pub .pub-row-heading {
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .pub-list-item .pub-abstract {
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .pub-list-item .pub-authors {
@@ -764,6 +765,7 @@ article .article-metadata {
 }
 
 .pub-list-item .pub-links {
+  font-size: 1rem;
   padding-top: 10px;
 }
 
