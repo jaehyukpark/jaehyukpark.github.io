@@ -26,9 +26,9 @@
 
 html {
   font-family: 'Palatino Linotype', sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   color: rgba(0,0,0,0.8);
-  line-height: 1.55;
+  line-height: 1.45;
 }
 @media screen and (min-width: 58em) {
   html {
@@ -480,10 +480,10 @@ a[data-fancybox] img {
 }
 
 #profile .portrait-title h3 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 300;
   color: rgba(0,0,0, 0.54);
-  margin: 0px 0 10px 0;
+  margin: 0px 0 10px 10px;
 }
 
 #profile ul.network-icon {
