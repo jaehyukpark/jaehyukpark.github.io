@@ -741,10 +741,12 @@ article .article-metadata {
 .pub .pub-authors {
   font-style: italic;
   line-height: 30px; /* Match share bar line height. */
+  padding-top: 10px;
 }
 
 .pub .pub-row-heading {
   font-weight: bold;
+  padding-top: 10px;
 }
 
 .pub-list-item .pub-abstract {
