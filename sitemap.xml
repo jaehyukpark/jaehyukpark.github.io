@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>https://jaehyukpark.github.io/post/train_dev_test_set/</loc>
+      <lastmod>2018-07-27T22:44:28-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://jaehyukpark.github.io/post/</loc>
       <lastmod>2018-07-15T20:06:53+01:00</lastmod>
     </url>
@@ -70,6 +79,16 @@
     
     <url>
     
+      <loc>https://jaehyukpark.github.io/tags/deep-learning/</loc>
+      <lastmod>2018-07-27T22:44:28-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://jaehyukpark.github.io/tags/fashion/</loc>
       <lastmod>2018-07-21T15:59:39-04:00</lastmod>
       <priority>0</priority>
@@ -90,8 +109,18 @@
     
     <url>
     
+      <loc>https://jaehyukpark.github.io/tags/know-how/</loc>
+      <lastmod>2018-07-27T22:44:28-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://jaehyukpark.github.io/tags/machine-learning/</loc>
-      <lastmod>2018-07-21T15:59:39-04:00</lastmod>
+      <lastmod>2018-07-27T22:44:28-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -122,6 +151,16 @@
     
       <loc>https://jaehyukpark.github.io/tags/</loc>
       <lastmod>2018-07-21T15:59:39-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://jaehyukpark.github.io/tags/training/</loc>
+      <lastmod>2018-07-27T22:44:28-04:00</lastmod>
       <priority>0</priority>
     </url>
     
