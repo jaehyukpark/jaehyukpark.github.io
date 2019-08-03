@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Fri, 27 Jul 2018 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 27 Jul 2018 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://jaehyukpark.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Dividing train/dev/test sets in machine learning</title>
-      <link>https://jaehyukpark.github.io/post/train_dev_test_set/</link>
-      <pubDate>Fri, 27 Jul 2018 22:44:28 -0400</pubDate>
-      
-      <guid>https://jaehyukpark.github.io/post/train_dev_test_set/</guid>
-      <description>1. Why Does It Matter? Or When Does It Matter? In one of my current projects, our team try to generate a machine learning model to predict whether some rare event would be happened or not. Since we don&amp;rsquo;t want to use any information from our test set, even in overall descriptive statistics, how to divide our whole dataset into train/dev/test sets becomes one of our concern before further analyses.</description>
-    </item>
     
   </channel>
 </rss>

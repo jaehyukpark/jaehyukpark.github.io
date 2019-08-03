@@ -5,8 +5,8 @@
     
     <url>
     
-      <loc>https://jaehyukpark.github.io/post/train_dev_test_set/</loc>
-      <lastmod>2018-07-27T22:44:28-04:00</lastmod>
+      <loc>https://jaehyukpark.github.io/publication/pub_linkedin_2019/</loc>
+      <lastmod>2019-08-03T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -15,7 +15,7 @@
     <url>
     
       <loc>https://jaehyukpark.github.io/post/</loc>
-      <lastmod>2018-07-15T20:06:53+01:00</lastmod>
+      <lastmod>2018-07-27T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -24,7 +24,7 @@
     <url>
     
       <loc>https://jaehyukpark.github.io/publication/</loc>
-      <lastmod>2018-04-09T19:10:15+01:00</lastmod>
+      <lastmod>2017-01-01T00:00:00-08:00</lastmod>
     </url>
     
   
@@ -33,7 +33,7 @@
     <url>
     
       <loc>https://jaehyukpark.github.io/talk/</loc>
-      <lastmod>2018-04-09T19:10:15+01:00</lastmod>
+      <lastmod>2017-01-01T00:00:00-08:00</lastmod>
     </url>
     
   
@@ -42,7 +42,7 @@
     <url>
     
       <loc>https://jaehyukpark.github.io/publication/style_in_the_age_of_instagram_cscw_2016/</loc>
-      <lastmod>2018-07-21T15:59:39-04:00</lastmod>
+      <lastmod>2016-02-27T21:16:05-04:00</lastmod>
     </url>
     
   
@@ -51,7 +51,27 @@
     <url>
     
       <loc>https://jaehyukpark.github.io/publication_types/1/</loc>
-      <lastmod>2018-07-21T15:59:39-04:00</lastmod>
+      <lastmod>2016-02-27T21:16:05-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://jaehyukpark.github.io/publication_types/2/</loc>
+      <lastmod>2019-08-03T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://jaehyukpark.github.io/tags/big-data-analytics/</loc>
+      <lastmod>2019-08-03T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -70,7 +90,7 @@
     <url>
     
       <loc>https://jaehyukpark.github.io/tags/cultural-industry/</loc>
-      <lastmod>2018-07-21T15:59:39-04:00</lastmod>
+      <lastmod>2016-02-27T21:16:05-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -79,8 +99,8 @@
     
     <url>
     
-      <loc>https://jaehyukpark.github.io/tags/deep-learning/</loc>
-      <lastmod>2018-07-27T22:44:28-04:00</lastmod>
+      <loc>https://jaehyukpark.github.io/tags/data-science/</loc>
+      <lastmod>2019-08-03T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -90,7 +110,27 @@
     <url>
     
       <loc>https://jaehyukpark.github.io/tags/fashion/</loc>
-      <lastmod>2018-07-21T15:59:39-04:00</lastmod>
+      <lastmod>2016-02-27T21:16:05-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://jaehyukpark.github.io/tags/future-of-work/</loc>
+      <lastmod>2019-08-03T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://jaehyukpark.github.io/tags/global-economy/</loc>
+      <lastmod>2019-08-03T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -100,7 +140,7 @@
     <url>
     
       <loc>https://jaehyukpark.github.io/</loc>
-      <lastmod>2018-07-21T15:59:39-04:00</lastmod>
+      <lastmod>2019-08-02T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -109,8 +149,18 @@
     
     <url>
     
-      <loc>https://jaehyukpark.github.io/tags/know-how/</loc>
-      <lastmod>2018-07-27T22:44:28-04:00</lastmod>
+      <loc>https://jaehyukpark.github.io/tags/labor-market/</loc>
+      <lastmod>2019-08-03T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://jaehyukpark.github.io/tags/linkedin/</loc>
+      <lastmod>2019-08-03T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -120,7 +170,17 @@
     <url>
     
       <loc>https://jaehyukpark.github.io/tags/machine-learning/</loc>
-      <lastmod>2018-07-27T22:44:28-04:00</lastmod>
+      <lastmod>2016-02-27T21:16:05-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://jaehyukpark.github.io/tags/network-science/</loc>
+      <lastmod>2019-08-03T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -130,7 +190,7 @@
     <url>
     
       <loc>https://jaehyukpark.github.io/publication_types/</loc>
-      <lastmod>2018-07-21T15:59:39-04:00</lastmod>
+      <lastmod>2016-02-27T21:16:05-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -140,7 +200,7 @@
     <url>
     
       <loc>https://jaehyukpark.github.io/tags/social-media/</loc>
-      <lastmod>2018-07-21T15:59:39-04:00</lastmod>
+      <lastmod>2016-02-27T21:16:05-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -150,17 +210,7 @@
     <url>
     
       <loc>https://jaehyukpark.github.io/tags/</loc>
-      <lastmod>2018-07-21T15:59:39-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://jaehyukpark.github.io/tags/training/</loc>
-      <lastmod>2018-07-27T22:44:28-04:00</lastmod>
+      <lastmod>2019-08-03T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
