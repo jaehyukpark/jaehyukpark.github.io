@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ✏️ Edit the title below -->
+<title>Note Title — Park, Jaehyuk</title>
+<meta name="description" content="A short description for search engines.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  /* ── Note article layout ── */
+  .note-article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 5rem 2rem 6rem;
+  }
+
+  .note-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .note-meta-tag {
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 400;
+  }
+  .note-meta-sep { color: var(--border); }
+  .note-meta-date {
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+
+  .note-article h1 {
+    font-family: var(--serif);
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin-bottom: 3rem;
+    color: var(--text);
+  }
+
+  /* Article body typography */
+  .note-body {
+    font-size: 1.02rem;
+    line-height: 1.85;
+    color: #444440;
+  }
+  .note-body p { margin-bottom: 1.5rem; }
+  .note-body h2 {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 2.5rem 0 1rem;
+    color: var(--text);
+  }
+  .note-body h3 {
+    font-family: var(--sans);
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 2rem 0 0.75rem;
+  }
+  .note-body blockquote {
+    border-left: 2px solid var(--accent);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    color: var(--muted);
+    font-style: italic;
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  .note-body a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(181,104,30,0.35);
+  }
+  .note-body a:hover { border-bottom-color: var(--accent); }
+  .note-body ul, .note-body ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .note-body li { margin-bottom: 0.4rem; line-height: 1.7; }
+  .note-body hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 3rem 0;
+  }
+
+  /* Back link */
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    margin-bottom: 3rem;
+    transition: color 0.2s;
+  }
+  .back-link:hover { color: var(--accent); }
+  .back-link::before { content: '←'; }
+</style>
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav>
+  <a class="logo" href="../index.html">Park, Jaehyuk</a>
+  <ul>
+    <li><a href="../index.html">About</a></li>
+    <li><a href="../publications.html">Publications</a></li>
+    <li><a href="../notes.html" class="active">Notes</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ── Article ── -->
+<article class="note-article">
+
+  <a class="back-link" href="../notes.html">All Notes</a>
+
+  <!-- ✏️ Edit the tag and date -->
+  <div class="note-meta">
+    <span class="note-meta-tag">Tag / Topic</span>
+    <span class="note-meta-sep">·</span>
+    <span class="note-meta-date">Month DD, YYYY</span>
+  </div>
+
+  <!-- ✏️ Edit the title -->
+  <h1>Your Note Title Goes Here</h1>
+
+  <!-- ✏️ Write your note content below.
+       Use <p> for paragraphs, <h2> for section headings,
+       <blockquote> for quotes, <hr> for dividers. -->
+  <div class="note-body">
+
+    <p>
+      Opening paragraph goes here. Write freely — this is your space for ideas that don't fit neatly into a journal paper format.
+    </p>
+
+    <p>
+      Second paragraph. You can use <a href="#">links like this</a> and continue writing naturally.
+    </p>
+
+    <h2>A Section Heading</h2>
+
+    <p>
+      Body text continues here. Feel free to add as many paragraphs and sections as you need.
+    </p>
+
+    <blockquote>
+      A quote or key insight, if you have one worth pulling out.
+    </blockquote>
+
+    <p>
+      Closing thoughts.
+    </p>
+
+  </div>
+
+</article>
+
+<!-- ── Footer ── -->
+<footer>
+  <p>© 2026 Park, Jaehyuk &nbsp;·&nbsp; KDI School of Public Policy and Management, Sejong, Korea</p>
+  <p><a href="mailto:jp@kdischool.ac.kr">jp@kdischool.ac.kr</a></p>
+</footer>
+
+</body>
+</html>

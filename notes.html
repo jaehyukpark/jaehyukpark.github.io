@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notes — Park, Jaehyuk</title>
+<meta name="description" content="Notes and thoughts by Park, Jaehyuk on data, AI, labor, and society.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .page-hero {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 5rem 5rem 3rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .page-hero h1 {
+    font-family: var(--sans);
+    font-size: 2.8rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.75rem;
+  }
+  .page-hero p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    max-width: 500px;
+    line-height: 1.7;
+  }
+
+  /* Full notes list (different from the 2-up grid on homepage) */
+  .notes-full-list { list-style: none; }
+
+  .note-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 2.5rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border);
+    align-items: start;
+    text-decoration: none;
+    color: inherit;
+    display: grid;
+    transition: background 0.15s;
+  }
+  .note-row:first-child { border-top: 1px solid var(--border); }
+  .note-row:hover .note-row-title { color: var(--accent); }
+
+  .note-row-date {
+    font-size: 0.73rem;
+    color: var(--muted);
+    padding-top: 5px;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
+  }
+  .note-row-inner {}
+  .note-row-tag {
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.4rem;
+    display: block;
+  }
+  .note-row-title {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.35;
+    margin-bottom: 0.5rem;
+    transition: color 0.2s;
+  }
+  .note-row-excerpt {
+    font-size: 0.84rem;
+    color: var(--muted);
+    line-height: 1.65;
+    max-width: 560px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav>
+  <a class="logo" href="index.html">Park, Jaehyuk</a>
+  <ul>
+    <li><a href="index.html">About</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="notes.html" class="active">Notes</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Page hero -->
+<div class="page-hero">
+  <h1>Notes &amp; Thoughts</h1>
+  <p>Occasional writing on data, society, and the questions that don't fit neatly into journal papers. Some overlap with my <a href="https://www.donga.com" style="color:var(--accent); text-decoration:none;">Dong-A Ilbo column</a>.</p>
+</div>
+
+<div class="page">
+  <section class="section" style="border-top:none; padding-top:2.5rem;">
+
+    <!-- ════════════════════════════════════════
+         NOTES LIST — Add new notes at the top.
+         Copy one <a class="note-row"> block,
+         paste it above the first one, fill in details,
+         and create the matching file in the notes/ folder.
+         ════════════════════════════════════════ -->
+    <ul class="notes-full-list">
+
+      <!-- ✏️ ADD NEW NOTES AT THE TOP -->
+
+      <a class="note-row" href="notes/ai-ethics-public-institutions.html">
+        <div class="note-row-date">March 21, 2026</div>
+        <div class="note-row-inner">
+          <span class="note-row-tag">AI Policy</span>
+          <div class="note-row-title">On the Ethics of Deploying AI in Public Institutions</div>
+          <div class="note-row-excerpt">Where does the line fall between efficiency and accountability when governments rely on algorithmic decision systems? A short reflection.</div>
+        </div>
+      </a>
+
+      <a class="note-row" href="notes/labor-market-llm.html">
+        <div class="note-row-date">February 14, 2026</div>
+        <div class="note-row-inner">
+          <span class="note-row-tag">Labor Markets</span>
+          <div class="note-row-title">What Does the Labor Market Look Like from Inside an LLM?</div>
+          <div class="note-row-excerpt">Reflections from our WWW'24 paper and what surprised me most about how language models encode the structure of work.</div>
+        </div>
+      </a>
+
+    </ul>
+
+  </section>
+</div><!-- /page -->
+
+<!-- ── Footer ── -->
+<footer>
+  <p>© 2026 Park, Jaehyuk &nbsp;·&nbsp; KDI School of Public Policy and Management, Sejong, Korea</p>
+  <p><a href="mailto:jp@kdischool.ac.kr">jp@kdischool.ac.kr</a></p>
+</footer>
+
+</body>
+</html>

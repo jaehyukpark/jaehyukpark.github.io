@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Does the Labor Market Look Like from Inside an LLM? — Park, Jaehyuk</title>
+<meta name="description" content="Reflections from our WWW'24 paper on Labor Space and how language models encode the structure of work.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  .note-article { max-width: 720px; margin: 0 auto; padding: 5rem 2rem 6rem; }
+  .note-meta { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+  .note-meta-tag { font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); }
+  .note-meta-sep { color: var(--border); }
+  .note-meta-date { font-size: 0.72rem; color: var(--muted); letter-spacing: 0.04em; }
+  .note-article h1 { font-family: var(--serif); font-size: 3rem; font-weight: 400; line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 3rem; }
+  .note-body { font-size: 1.02rem; line-height: 1.85; color: #444440; }
+  .note-body p { margin-bottom: 1.5rem; }
+  .note-body h2 { font-family: var(--serif); font-size: 1.6rem; font-weight: 400; margin: 2.5rem 0 1rem; color: var(--text); }
+  .note-body blockquote { border-left: 2px solid var(--accent); padding-left: 1.5rem; margin: 2rem 0; color: var(--muted); font-style: italic; font-family: var(--serif); font-size: 1.1rem; line-height: 1.6; }
+  .note-body a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(181,104,30,0.35); }
+  .note-body a:hover { border-bottom-color: var(--accent); }
+  .back-link { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); text-decoration: none; margin-bottom: 3rem; transition: color 0.2s; }
+  .back-link:hover { color: var(--accent); }
+  .back-link::before { content: '←'; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="../index.html">Park, Jaehyuk</a>
+  <ul>
+    <li><a href="../index.html">About</a></li>
+    <li><a href="../publications.html">Publications</a></li>
+    <li><a href="../notes.html" class="active">Notes</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<article class="note-article">
+
+  <a class="back-link" href="../notes.html">All Notes</a>
+
+  <div class="note-meta">
+    <span class="note-meta-tag">Labor Markets</span>
+    <span class="note-meta-sep">·</span>
+    <span class="note-meta-date">February 14, 2026</span>
+  </div>
+
+  <h1>What Does the Labor Market Look Like from Inside an LLM?</h1>
+
+  <div class="note-body">
+
+    <p>
+      Last year, Seongwoon Kim, Yong-Yeol Ahn, and I published <a href="../publications.html">Labor Space</a> at WWW'24 — a paper about using large language models to build a unified representation of the labor market. The idea was straightforward: instead of using job titles or occupational codes to measure similarity between jobs (which are inconsistent and sparse), could we embed the full text of job descriptions into a shared semantic space and reason about skill relationships from there?
+    </p>
+
+    <p>
+      The answer was yes. But what I want to write about here is not the method — it's the surprises.
+    </p>
+
+    <h2>What the model got right that we didn't expect</h2>
+
+    <p>
+      When you project job descriptions into an LLM's embedding space, you get a map. And like any good map, the most interesting thing about it is not the expected landmarks — it's the unexpected topology. Jobs that we would normally classify as far apart (say, a graphic designer and a UX researcher) turn out to live very close together in skill-space. Jobs that look similar on a resume (two "manager" roles in different industries) can be in completely different neighborhoods.
+    </p>
+
+    <blockquote>
+      The model doesn't know what a "manager" is. It knows what managers <em>do</em> — and apparently that differs a lot.
+    </blockquote>
+
+    <p>
+      This is more than a curiosity. It suggests that our standard occupational classification systems — O*NET, ISCO, KSOCs — are encoding <em>social</em> categories of work, not functional ones. The LLM, having no prior knowledge of these categories, recovers something closer to the actual skill structure.
+    </p>
+
+    <h2>What the model got wrong</h2>
+
+    <p>
+      It also got some things wrong in illuminating ways. The embedding space reflects the <em>text</em> of job descriptions, which reflects how employers talk about work — not necessarily what workers actually do. Jobs in sectors with more elaborate HR writing (tech, finance, consulting) are described with more semantic richness. Jobs in physical labor sectors are often described in sparse, formulaic language that clusters them closer together than they really are.
+    </p>
+
+    <p>
+      In other words: the model is a mirror of how the labor market <em>represents itself in language</em>, which is not quite the same thing as the labor market.
+    </p>
+
+    <h2>Why this matters for policy</h2>
+
+    <p>
+      If you're building a reskilling program, a job-matching platform, or a labor market forecasting tool, it matters enormously whether your similarity metric reflects actual skill adjacency or just textual convention. Our paper is a step toward the former. But the gap between "better than O*NET" and "actually correct" is worth taking seriously.
+    </p>
+
+    <p>
+      I'm continuing to work on this. If you're working on related problems — especially on the policy or measurement side — I'd genuinely love to talk.
+    </p>
+
+  </div>
+
+</article>
+
+<footer>
+  <p>© 2026 Park, Jaehyuk &nbsp;·&nbsp; KDI School of Public Policy and Management, Sejong, Korea</p>
+  <p><a href="mailto:jp@kdischool.ac.kr">jp@kdischool.ac.kr</a></p>
+</footer>
+
+</body>
+</html>

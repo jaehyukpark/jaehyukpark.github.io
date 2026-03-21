@@ -1,1 +1,383 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Park, Jaehyuk — Associate Professor, KDI School</title>
+<meta name="description" content="Park, Jaehyuk is an Associate Professor at KDI School working at the intersection of data science, AI, and public policy.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  /* ── Hero (homepage only) ── */
+  .hero {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 6rem 5rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr 285px;
+    gap: 4rem;
+    align-items: start;
+  }
+  .hero-eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 1px;
+    background: var(--muted);
+  }
+  .hero h1 {
+    font-family: var(--sans);
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.75rem;
+    color: var(--text);
+  }
+  .hero-institution {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 0.25rem;
+  }
+  .hero-dept {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-bottom: 2rem;
+    letter-spacing: 0.02em;
+  }
+  .hero-bio {
+    font-size: 0.97rem;
+    line-height: 1.85;
+    color: #525249;
+    max-width: 500px;
+    margin-bottom: 2.5rem;
+  }
+  .hero-links {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .hero-links a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+    transition: opacity 0.2s;
+  }
+  .hero-links a:hover { opacity: 0.6; }
+
+  /* Profile photo */
+  .hero-photo-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* push down so photo top aligns with h1 (eyebrow + its margin ≈ 2.5rem) */
+    padding-top: 2.5rem;
+  }
+  .hero-photo-frame {
+    display: inline-block;
+    line-height: 0; /* prevent gap below img */
+  }
+  .hero-photo {
+    width: 240px;
+    height: 320px;
+    object-fit: cover;
+    object-position: center top;
+    filter: grayscale(12%);
+    display: block;
+    border: 1.5px solid var(--muted);
+  }
+
+  /* Research grid */
+  .research-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+  .research-item h3 {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+    line-height: 1.3;
+  }
+  .research-item p {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.7;
+  }
+
+  /* News/updates strip */
+  .news-list { list-style: none; }
+  .news-item {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+    align-items: start;
+  }
+  .news-item:first-child { border-top: 1px solid var(--border); }
+  .news-date {
+    font-size: 0.72rem;
+    color: var(--muted);
+    padding-top: 3px;
+    letter-spacing: 0.03em;
+    line-height: 1.4;
+  }
+  .news-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  .news-text a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .news-text a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav>
+  <a class="logo" href="index.html">Park, Jaehyuk</a>
+  <ul>
+    <li><a href="index.html" class="active">About</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="notes.html">Notes</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+
+<!-- ════════════════════════════════════════
+     HERO — Edit your name, title, and bio here
+     ════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-text">
+
+    <!-- Eyebrow line: short title + affiliation -->
+    <div class="hero-eyebrow">Associate Professor · KDI School</div>
+
+    <!-- Your name -->
+    <h1>Park, Jaehyuk</h1>
+
+    <!-- Institution & role -->
+    <div class="hero-institution">KDI School of Public Policy and Management</div>
+    <div class="hero-dept">Chair, Master of Data Science for Public Policy and Management &nbsp;·&nbsp; Sejong, Korea</div>
+
+    <!-- Short bio paragraph -->
+    <p class="hero-bio">
+      I study the intersection of data science, computational social science, and public policy — using large-scale network data and machine learning to understand labor markets, AI governance, and the hidden structures that shape innovation and culture.
+    </p>
+
+    <!-- Quick links -->
+    <div class="hero-links">
+      <a href="https://scholar.google.com/citations?hl=en&user=n_qVDQQAAAAJ" target="_blank">Google Scholar</a>
+      <a href="cv.pdf" target="_blank">CV (PDF)</a>
+      <a href="mailto:jp@kdischool.ac.kr">Email</a>
+      <a href="https://www.donga.com" target="_blank">Dong-A Column</a>
+    </div>
+
+  </div>
+
+  <div class="hero-photo-wrap">
+    <div class="hero-photo-frame">
+      <img class="hero-photo" src="profile.png" alt="Park, Jaehyuk">
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     RESEARCH INTERESTS — Edit the 3 cards below
+     ════════════════════════════════════════ -->
+<div class="page">
+  <section class="section">
+    <div class="section-label">Research Interests</div>
+    <div class="research-grid">
+
+      <!-- Card 1 -->
+      <div class="research-item">
+        <h3>Computational Social Science</h3>
+        <p>Network analysis and large-scale data to reveal hidden structures in labor markets, culture, and innovation ecosystems.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="research-item">
+        <h3>AI &amp; Public Policy</h3>
+        <p>How governments and institutions both shape and are reshaped by artificial intelligence — from governance models to behavioral effects.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="research-item">
+        <h3>Labor &amp; Innovation</h3>
+        <p>Mapping the global flow of talent and skills, and understanding how technology transforms the structure of work over time.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       NEWS — Add items at the top of this list.
+       Format: <li class="news-item"> ... </li>
+       ════════════════════════════════════════ -->
+  <section class="section">
+    <div class="section-label">News</div>
+    <ul class="news-list">
+
+      <!-- ✏️ ADD NEW NEWS ITEMS HERE (most recent first) -->
+
+      <li class="news-item">
+        <span class="news-date">Mar<br>2026</span>
+        <span class="news-text">New paper published in <em>EPJ Data Science</em>: <a href="publications.html">"Rap as a Social Reflection: A Quantitative Analysis of Social Conditions and Lyrical Expressions"</a> (with Minsu Park, Fabio Rojas, Yong-Yeol Ahn).</span>
+      </li>
+
+      <li class="news-item">
+        <span class="news-date">Jan<br>2026</span>
+        <span class="news-text">Promoted to Associate Professor at KDI School.</span>
+      </li>
+
+      <li class="news-item">
+        <span class="news-date">Jul<br>2024</span>
+        <span class="news-text">Appointed Chair of the Master of Data Science for Public Policy and Management (MDS) program.</span>
+      </li>
+
+      <li class="news-item">
+        <span class="news-date">Apr<br>2024</span>
+        <span class="news-text">Started writing a regular column for <a href="https://www.donga.com" target="_blank">Dong-A Ilbo</a>.</span>
+      </li>
+
+    </ul>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       SELECTED PUBLICATIONS — shows 3 highlights.
+       Full list is on publications.html
+       ════════════════════════════════════════ -->
+  <section class="section">
+    <div class="section-label">Selected Publications</div>
+    <ul class="pub-list">
+
+      <li class="pub-item">
+        <span class="pub-year">2026</span>
+        <div>
+          <div class="pub-title">Rap as a Social Reflection: A Quantitative Analysis of Social Conditions and Lyrical Expressions</div>
+          <div class="pub-authors">Minsu Park*, Jaehyuk Park*, Fabio Rojas, Yong-Yeol Ahn &nbsp;(* Contributed Equally)</div>
+          <div class="pub-venue">EPJ Data Science</div>
+        </div>
+      </li>
+
+      <li class="pub-item">
+        <span class="pub-year">2024</span>
+        <div>
+          <div class="pub-title">Labor Space: Unifying Representation of the Labor Market via Large Language Models</div>
+          <div class="pub-authors">Seongwoon Kim, Yong-Yeol Ahn, Jaehyuk Park* &nbsp;(* Corresponding Author)</div>
+          <div class="pub-venue">The ACM Web Conference (WWW'24)</div>
+        </div>
+      </li>
+
+      <li class="pub-item">
+        <span class="pub-year">2019</span>
+        <div>
+          <div class="pub-title">Global labor flow network reveals the hierarchical organization and dynamics of geo-industrial clusters</div>
+          <div class="pub-authors">Jaehyuk Park, Ian B. Wood, Elise Jing, Azadeh Nematzadeh, Souvik Ghosh, Michael D. Conover, Yong-Yeol Ahn</div>
+          <div class="pub-venue">Nature Communications <span class="pub-badge">Press Coverage</span></div>
+        </div>
+      </li>
+
+    </ul>
+    <p style="margin-top:1.75rem; font-size:0.82rem;">
+      <a href="publications.html" style="color:var(--accent); text-decoration:none; border-bottom:1px solid currentColor; padding-bottom:1px; letter-spacing:0.06em; text-transform:uppercase; font-size:0.75rem;">View all publications →</a>
+    </p>
+  </section>
+
+
+
+
+  <!-- ════════════════════════════════════════
+       PRESS — Add or remove items as needed
+       ════════════════════════════════════════ -->
+  <section class="section">
+    <div class="section-label">In the Press</div>
+    <ul class="press-list">
+      <li>
+        <div class="press-outlet">MIT Technology Review</div>
+        <div class="press-desc">Machine Learning Algorithm Predicts Which New Faces Will Make It as Fashion Models</div>
+      </li>
+      <li>
+        <div class="press-outlet">Vogue</div>
+        <div class="press-desc">The Science of a Supermodel</div>
+      </li>
+      <li>
+        <div class="press-outlet">New York Magazine</div>
+        <div class="press-desc">Can You Scientifically Predict a Model's Success?</div>
+      </li>
+      <li>
+        <div class="press-outlet">CBS News</div>
+        <div class="press-desc">Who Will Be America's Next Top Model? Ask Instagram</div>
+      </li>
+      <li>
+        <div class="press-outlet">AAAS / Phys.org</div>
+        <div class="press-desc">Researchers Create First-Ever 'Map' of Global Labor Flow</div>
+      </li>
+      <li>
+        <div class="press-outlet">Communications of the ACM</div>
+        <div class="press-desc">Covered in Research Highlights</div>
+      </li>
+    </ul>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       CONTACT
+       ════════════════════════════════════════ -->
+  <section class="section" id="contact">
+    <div class="section-label">Contact</div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; max-width:680px;">
+      <div>
+        <p style="font-size:0.9rem; line-height:1.8; color:#555; margin-bottom:1.25rem;">
+          Open to research collaborations, speaking invitations, and conversations about data, policy, and society.
+        </p>
+        <p style="font-size:0.88rem; color:var(--muted);">
+          KDI School of Public Policy and Management<br>
+          263 Namsejong-ro, Sejong-si, South Korea
+        </p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:0.6rem; padding-top:0.25rem;">
+        <a href="mailto:jp@kdischool.ac.kr" style="color:var(--accent); text-decoration:none; font-size:0.88rem;">jp@kdischool.ac.kr</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=n_qVDQQAAAAJ" target="_blank" style="color:var(--muted); text-decoration:none; font-size:0.85rem; transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">Google Scholar →</a>
+        <a href="cv.pdf" target="_blank" style="color:var(--muted); text-decoration:none; font-size:0.85rem; transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">Curriculum Vitae →</a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page -->
+
+
+<!-- ── Footer ── -->
+<footer>
+  <p>© 2026 Park, Jaehyuk &nbsp;·&nbsp; KDI School of Public Policy and Management, Sejong, Korea</p>
+  <p><a href="mailto:jp@kdischool.ac.kr">jp@kdischool.ac.kr</a></p>
+</footer>
+
+</body>
+</html>
